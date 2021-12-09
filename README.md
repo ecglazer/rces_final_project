@@ -1,18 +1,20 @@
 ## Final Project Proposal: Crevasses on George VI Ice Shelf
 Emily Glazer
 
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/pangeo-data/pangeo-docker-images/2021.09.30?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252Fecglazer%252Frces_final_project%26urlpath%3Dtree%252Frces_final_project%252Ffinal_project.ipynb%26branch%3Dmain)
+
 #### Scientific question:
 
-In this project, I would like to investigate crevasses in the George VI ice shelf (GVIIS), one of the fastest melting ice shelves on the Antarctic Peninsula. More specifically, I plan to look at the relationship between basal crevasses and ice surface features.
+In this project, I would like to investigate crevasses in the George VI ice shelf (GVIIS), one of the fastest melting ice shelves on the Antarctic Peninsula. More specifically, I plan to look at the relationship between basal crevasses and ice surface crevasses.
 
-My goal will be to answer the questions: what is the distribution and scale of basal crevasses on GVIIS, and how does this relate to the overlying surface features (including surface crevasses)?
+My goal will be to answer the question: What is the relationship between the locations of basal crevasses and surface crevasses on GVIIS?
 
 #### Links to relevant datasets:
 
 - Radar data to examine basal crevasses: [CReSIS: Center for Remote Sensing of Ice Sheets](https://data.cresis.ku.edu/)
-- Satellite data to examine surface features: [ICESat-2: Ice, Cloud, and land Elevation Satellite-2](https://icesat-2.gsfc.nasa.gov/)
+- Satellite data to examine surface crevasses: [REMA: Reference Elevation Model of Antarctica](https://www.pgc.umn.edu/data/rema/)
 
 
 #### Summary of analysis:
 
-I plan to first read the CReSIS radar data into Python XArray datasets, and subset the flight lines by location to determine the distribution of data over GVIIS. I will then choose a representative sample of ~4 radar profiles, ideally 2 near grounding lines and 2 near the center of the ice shelf, and/or 2 with significant basal crevassing and 2 without, and plot the echograms next to the corresponding IceSAT-2 elevation data to see surface features in that location. I will examine the side-by-side profiles to see if there is a relationship worth further investigation between basal crevassing and surface features such as surface crevasses, rifts, or ponding.# rces_final_project
+I plan to read in CReSIS radar data and REMA surface elevation data over GVIIS into Python XArray datasets. I will then process the radar data and extract the elevation profiles over the radar flight paths so that I can juxtapose the surface profiles and basal radar echograms along 4 different 50-km flight trajectories. I will examine the side-by-side profiles to see if there is a relationship worth further investigation between the locations of surface and basal features.
